@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d1a7843388.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">𝙠𝙞𝙨𝙝</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#services"> Services</a></li>
+                    <li><a href="#portfolio"> Project</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text"> 
+                <p>Full stack Developer</p>
+                <h1>Hi, I'm <span>Kishore</span><br> from India</h1>
+            </div>
+
+        </div>
+    </div>
+    <!----------about------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/use.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello! I'm Kishore, a passionate and driven Computer Science Engineering student from Kanyakumari District, Tamil Nadu.
+                         I am currently a pre-final year student at Amrita College of Engineering and Technology in Erachakulam. <br>
+                         <br>
+                        Though still a student, I proudly embrace my role as a Full-Stack Developer, skilled in creating dynamic and user-friendly
+                         applications and websites. With a strong foundation in programming and a dedication to learning, I enjoy bringing ideas to
+                          life through code and innovation.
+                          <br>
+                          <br>
+                          I am excited to take on new challenges, collaborate with diverse teams, and continually expand my expertise in the 
+                          ever-evolving world of technology. Let's create something amazing together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025-3days</span><br>IIT-Madras college Flutter workshop -2 days at chennai</li>
+                            <li><span>2024-2weeks </span><br>AK-infopark IT company at Nagercoil</li>
+                            <li><span> 2024-2weeks</span><br> on M-square IT company at Thrivandrum </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-current</span><br> Computer Science Engineering, Pre-Final year,Amrita college of Engineering & Technology</li>
+                            <li><span>2022</span><br>12th Isha Vidhya Matriculation Higher Secondary School at Theroor</li>
+                            <li><span>2020</span><br>10th Isha Vidhya Matriculation Higher Secondary School at Theroor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually appealing and responsive websites that are not only aesthetically 
+                        pleasing but also highly functional. With a focus on clean design, user-friendly navigation,
+                         and optimized performance, I ensure your website stands out and delivers a seamless browsing experience.
+                    </p>
+                        <a href="https://www.wix.com/blog/10-free-web-design-tools?utm_source=bing&utm_medium=cpc&utm_campaign=506190447^1274335632852029^search%20-%20dsa&experiment_id=https%3A%2F%2Fwww.wix.com%2Fblog%2F10-free-web-design-tools^b^^&msclkid=c0686b24c1d01d9f4d3b0cf21ca99299">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                         <p>I specialize in designing engaging and intuitive applications that prioritize user experience.
+                             By combining innovative design principles with functionality, I craft apps that are both visually 
+                             stunning and easy to use, tailored to meet specific user needs.</p>
+                        <a href="https://www.wix.com/app-builder?utm_source=bing&utm_medium=cpc&utm_campaign=506190450^1273236120776124^search%20-%20dsa&experiment_id=https%3A%2F%2Fwix.com%2Fapp-builder^b^^&msclkid=ca967f679f941b825c8f18b14232eef8">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I deliver exceptional user interface and user experience design services, ensuring that
+                         every interaction with your product is intuitive and enjoyable. From wireframes to prototypes, 
+                         I focus on creating designs that are user-centered and enhance overall engagement.</p>
+                        <a href="https://statanalytica.com/blog/ui-ux-project-ideas/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------portfolio------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My project</h1>
+            <div class="work-List">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Youtube Frontend</h3>
+                        <p>YouTube Demo Site Developed a YouTube demo website using HTML and CSS,
+                             featuring a functional video player linked with URLs. Future enhancements
+                              include adding JavaScript for an active search bar and interactive icons.</p>
+                            <a href="https://youtube-demo-kish.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>To do list</h3>
+                        <p>To-Do List Demo Site Created a dynamic to-do list application using HTML, CSS, and 
+                            JavaScript. Users can add new tasks or notes and easily mark completed tasks by 
+                            cutting off specific tab links. Future plans include integrating an alarm or timer
+                             feature to help manage task completion effectively.</p>
+                            <a href="https://to-do-list-kish.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+                 <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------Contact-------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mkishore.mohan1312@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9363576253</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kish_m_k_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kishore-mohan-4a9737275/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/KMohan79952"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://github.com/Kishore-shorkie"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images/KishoreM_Resume (1).pdf"Download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © kish<i class="fa-solid fa-heart"></i>Made with Html ,css & javascript</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+        
+
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCiVtzQM9lJG2f--89-84Ok3lBkekVVKfjM5YunZwELKPntkAVYPmUFqSOeVfDnYTL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
